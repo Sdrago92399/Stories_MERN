@@ -8,6 +8,7 @@ import {
 import { useCookies } from "react-cookie";
 import { toast } from "sonner";
 import axiosInstance from "@/api/axios";
+import { useNavigate } from "react-router-dom";
 
 const useAuth = () => {
   const isProduction = import.meta.env.VITE_NODE_ENV === "production";

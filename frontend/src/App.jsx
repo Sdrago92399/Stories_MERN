@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <Router>
-      {user && <Header />}
+      {user && !user?.isAdmin && <Header />}
       <Toaster position="top-center" richColors />
 
       <Routes>
